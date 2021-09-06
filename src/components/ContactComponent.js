@@ -118,7 +118,7 @@ class Contact extends Component {
                         <div className="col-12">
                             <h3>Send us your Feedback</h3>
                         </div>
-                        <div className="col-12 col-md-9">
+                        <div className="col-12">
                             <Form onSubmit={this.handleSubmit}>
                                 <FormGroup row>
                                     <Label htmlFor="firstname" md={2}>First Name</Label>
@@ -128,8 +128,7 @@ class Contact extends Component {
                                             valid={errors.firstname === ''}
                                             invalid={errors.firstname !== ''}
                                             onBlur={this.handleBlur('firstname')}
-                                            onChange={this.handleInputChange}
-                                        />
+                                            onChange={this.handleInputChange}/>
                                         <FormFeedback>{errors.firstname}</FormFeedback>
                                     </Col>
                                 </FormGroup>
