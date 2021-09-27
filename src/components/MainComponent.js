@@ -61,7 +61,7 @@ const DishWithId= ({ match }) => {
       isLoading={this.props.dishes.isLoading}
       errMess={this.props.dishes.errMess}
       comments={this.props.comments.comments.filter((comment) => comment.dishId === parseInt(match.params.dishId,10))}
-      errMess={this.props.comments.errMess}
+      commentsErrMess={this.props.comments.errMess}
       addComment={this.props.addComment}
     />
   );
