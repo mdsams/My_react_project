@@ -1,11 +1,11 @@
 import { createStore , combineReducers , applyMiddleware } from 'redux';
-import { createForms } from 'react-redux-form';
+import { createForms } from 'react-redux-form'; // Lets us bring form state into store, so form state can persist across views (contrast to LocalForm)
 import{ Dishes } from './dishes';
 import{ Comments } from './comments';
 import{ Promotions } from './promotions';
 import{ Leaders } from './leaders';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
+import logger from 'redux-logger';  // Logs action nicely to console (prev state, action, next state)
 import { InitialFeedback } from './forms';
 
 export const ConfigureStore = () => {
